@@ -1,0 +1,320 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  }
+  header{
+    height: 98vh;
+    width:auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    
+    }
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+  }
+  @keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, 0px); }    
+  }
+  .w{
+    font-family:bold;
+    font-size: 1000%;
+    color:#fd7f09;
+    border:10px solid #3806f0;
+    text-align:center;
+    padding:2% 2% 2% 2%;
+    animation: word 2s ease-in-out infinite;
+    }
+    @keyframes word{
+      0%{
+        color:#f9fd01;
+      }
+      50%{
+        color: #08ee1b;
+      }
+      75%{
+         color:#fd0606;
+      }
+      100%{
+          color:#fc05d3;
+      }
+    }
+  .game{
+    background-color:rgb(229, 226, 226);
+    border:1px solid silver;
+  }
+  .Generate{
+    border:1px solid white;
+    background-color:white;
+    margin:5% 5% 5% 5%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/gnb.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+  }
+  .bg{
+    margin:4% 5% 1% 40%;
+    padding:1.5% 2% ;
+    background-color: #0d3888; 
+    color:#f1b307;
+    font-size: 200%;
+    font-family: cursive;
+    text-align: center;
+    border-radius: 30%;
+    cursor:pointer;
+  }
+  .bg:hover{
+    color:#36f155;
+    padding:2.5% 3%;
+    border-radius: 50%;
+    font-size:300%;
+    margin:4% 5% 1% 30%;
+  }
+  
+  .gn{
+     border:0px solid  transparent;
+      margin:5% 25% 7% 35%;
+      padding: 0%;
+      font-size:500%;
+      text-align: center;
+      color: #0409f8;
+      background-color: #131211;
+      border-radius: 40%;
+      animation: num 2s ease-in-out infinite,floating 2s ease-in-out infinite;
+  }
+  
+  @keyframes num{
+    0%{
+      color:#ff09c1;
+      text-shadow: 0 0 3px #111111;
+      background-color: #130249;
+    }
+     25%{
+      color:#02fff2;
+      text-shadow: 0 0 3px #130f11;
+      background-color:  #3f0321;
+    }
+    50%{
+      color:#6aff00;
+      text-shadow: 0 0 3px #0c0d0e;
+      background-color: #027175;
+    }
+    75%{
+      color:#d9ff00;
+      text-shadow: 0 0 3px #0f110f;
+      background-color: #014e0b;
+    }
+    100%{
+      color:#f80c08;
+      text-shadow: 0 0 3px #111110;
+      background-color: #5a7202;
+    }
+  }
+  .Results{
+    border:1px solid white;
+    background-color:white;
+    margin:5% 5% 5% 5%;
+    background-image:  url("images/resultb.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+  }
+  .rl{
+       margin:5% 0% 5% 0%;
+       padding: 5% 2% 5% 5%;
+       font-size: 300%;
+  }
+  .ri{
+    margin:5% 5% 5% 0%;
+    padding:1% 1% 1% 0%;
+    font-size: 350%;
+    text-align: center;
+  }
+  .rb{
+    margin:5% 5% 5% 40%;
+    padding: 2% 5% 2% 5%;
+    text-align:center;
+    font-family: cursive;
+    font-size: 200%;
+    color:#0059ff;
+    background-color: #690b0b;
+    border-radius: 30%;
+    cursor:pointer;
+  }
+  .rb:hover{
+    font-size:300%;
+    color:#ffc402;
+    padding:3% 6% 3% 6%;
+    border-radius: 50%;
+    margin:5% 5% 5% 35%;
+  }
+  .r{
+     font-size: 600%;
+     font-style: Cursive;
+     border:1px solid transparent;
+     margin:5% 20% 5% 30%;
+     padding: 0% 3% 0% 3%;
+     text-align: center;
+     color:#08ee1b;
+     background-image: linear-gradient(#391fff,#fa8d08); 
+     border-radius:30%;
+     animation: res 5s ease-in-out infinite,res1 2s ease-in-out infinite;
+  }
+  
+  @keyframes res{
+    0%{
+      transform: rotate(0deg);
+      color:#f51414;
+    }
+    25%{
+         transform: rotate(-30deg);
+         color: #0dcdfd;
+    }
+    50%{
+      transform:rotate(0deg) ;
+      color:#f70793;
+    }
+    75%{
+       transform:rotate(30deg);
+       color:#06f34d;
+    }
+    100%{
+       transform: rotate(0deg);
+       color:#f81818;
+    }
+  }
+    @keyframes res1{
+      0%{
+        color:#f51414;
+      }
+      25%{
+        color: #0dcdfd;
+      }
+      50%{
+        color:#f70793;
+      }
+      75%{
+         color:#06f34d;
+      }
+      100%{
+         color:#f81818;
+      }
+    
+  }
+  .f{
+    border:1px solid rgb(82, 25, 25);
+    position:relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/3.png");
+    padding:8%;
+    overflow:hidden;
+    background-size: 100% 100%;
+  }
+  .dice img{
+    width:4.5%;
+    border-radius: 40%;
+    animation: dice 4s linear infinite;
+  }
+  .dice{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    position: absolute;
+    bottom:-30%;
+  }
+  @keyframes dice{
+    0%{
+      transform:translateY(0);
+      opacity:0;
+    }
+     50%{
+      
+      opacity:1;
+    }
+     70%{
+      
+      opacity:1;
+    }
+    100%{
+      transform:translateY(-40vh);
+      opacity:0;
+    }
+
+  }
+  .dice img:nth-child(1){
+    animation-delay:2s;
+    
+  }
+  .dice img:nth-child(2){
+    animation-delay:1s;
+  }
+  .dice img:nth-child(3){
+    animation-delay:3s;
+  }
+  .dice img:nth-child(4){
+    animation-delay:4.5s;
+  }
+  .dice img:nth-child(5){
+    animation-delay:3s;
+  }
+  .dice img:nth-child(6){
+    animation-delay:6s;
+    
+  }
+  .dice img:nth-child(7){
+    animation-delay:5s;
+    
+  }
+  .dice img:nth-child(8){
+    animation-delay:8s;
+    
+  }
+  .dice img:nth-child(9){
+    animation-delay:7s;
+    margin-right:15%;
+  }
+  @media(max-width:500px){
+    html{
+      font-size: 5px;
+    }
+    .rl{
+      margin:100px 0px 50px 150px;
+      padding: 5px 0px 5px 0px;
+    }
+    .ri{
+      
+      margin:20px 0px 50px 150px;
+      padding: 1px 0px 1px 0px;
+    }
+  }
+  @media(min-width:501px) and (max-width:1024px){
+    html{
+      font-size: 7px;
+    }
+  }
+  .logo:hover{
+    animation: zo 2s ease-in-out infinite;
+  }
+  @keyframes zo{
+    0%{
+        transform: scale(1.0);
+    }
+    50%{
+      transform: scale(1.5);
+    }
+    100%{
+         transform: scale(1.0);
+    }
+  }
